@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\title{\parbox{\linewidth}{\centering\textbf{
+Projektidee: Der virtuelle Naturbaum\\
+Adaptive Konvektionsl\"uftung f\"ur Bienenbeuten (Venti-Kasten 1.1)}}}
+
+\author{\parbox{\linewidth}{\centering
+Jens Buttensch\"on\\
+\small basierend auf Konzept 1.0 in Kooperation mit Marc Juncker, Mittelstand-Digital Zentrum Hannover\\
+(Bundesministerium f\"ur Wirtschaft und Klimaschutz), Standort Garbsen}}
+
+\date{April 2025 -- Version 1.1}
+
+\begin{document}
+\maketitle
+
+\section*{\normalsize \underline{Was ist neu in Version 1.1?}}
+\begin{itemize}[topsep=2pt]
+  \item Erweiterung um Luftvolumenabsch\"atzung f\"ur unterschiedliche Beutenkonfigurationen.
+  \item Integration einer Modellrechnung zum Wasserdampfaustrag pro Luftwechsel.
+  \item Schwarmvermeidung durch schnellere Honigreifung und Platzoptimierung.
+  \item Exakte Begriffskorrektur: \textbf{Segeberger Beute} statt "S\"ageberger".
+  \item Strukturierung f\"ur besseres Pilotprojektmanagement.
+\end{itemize}
+
+\section*{Leitgedanke: Der virtuelle Naturbaum}
+In der Natur bevorzugen Bienen hohle B\"aume als Behausung, die durch Holzstruktur ein stabiles Mikroklima bieten. Dieses Prinzip \textbf{simulieren wir technologisch}: energieeffizient, ressourcenschonend, bienenfreundlich.
+
+\section{Zielsetzung}
+Entwicklung eines autarken Systems, das durch intelligente Konvektionsl\"uftung:
+\begin{itemize}[topsep=2pt]
+  \item den F\"achelaufwand der Bienen minimiert,
+  \item die Honigreife beschleunigt,
+  \item Temperaturschwankungen abfedert,
+  \item ein naturnahes Baumklima nachbildet,
+  \item und die Schwarmneigung aktiv reduziert.
+\end{itemize}
+
+\section{Technisches Prinzip: Der umfunktionierte Futterkasten}
+\begin{itemize}[topsep=2pt]
+  \item \textbf{Sensorik:} Temperatur- und Luftfeuchtesensoren innen und au\u{\ss}en.
+  \item \textbf{Aktoreinheit:} Servo-Klappe im modifizierten Futterkasten.
+  \item \textbf{Logik:} Mikrocontroller (z.B. ESP32) mit adaptiver Regelsoftware.
+  \item \textbf{Energie:} Versorgung durch PV-Panel und Akku.
+\end{itemize}
+
+\section{Adaptiver Algorithmus}
+\begin{itemize}[topsep=2pt]
+  \item Erfassung von Innen- und Au\u{\ss}enklimadaten.
+  \item Bewertung der aktuellen Feuchte- und Temperaturdifferenzen.
+  \item Prognose des potenziellen Wasserdampfaustrags.
+  \item Entscheidungslogik: gezielte, schonende Luftwechsel.
+\end{itemize}
+
+\section{Erweiterungen in Version 1.1}
+
+\subsection{1. Luftvolumenabsch\"atzung der Beute}
+Basierend auf Segeberger Standardma\u{\ss}en:
+\begin{itemize}[topsep=2pt]
+  \item 1 Zarge: ca. 30--35 Liter Innenvolumen.
+  \item 2 Zargen: ca. 60--70 Liter.
+  \item 3 Zargen: ca. 90--100 Liter.
+\end{itemize}
+
+\subsection{2. Wasserdampfaustragsmodellierung}
+Ermittlung der Feuchteabgabe pro Luftaustausch:
+\begin{itemize}[topsep=2pt]
+  \item Volumen x (Unterschied absolute Feuchte innen/au\u{\ss}en).
+  \item Ziel: schnelle Entlastung der Waben vom eingetragenen Nektarwasser.
+\end{itemize}
+
+\subsection{3. Schwarmvermeidung durch Platzoptimierung}
+\begin{itemize}[topsep=2pt]
+  \item Schnellere Honigreifung schafft mehr Lagerraum.
+  \item Entlastung verhindert Platznot im Brutraum.
+  \item Reduzierter Schwarmdruck durch bessere Ressourcensteuerung.
+\end{itemize}
+
+\section{Integration mit KI-Infrastruktur}
+\begin{itemize}[topsep=2pt]
+  \item Anbindung an bestehende PV-/Akku- und Mobilfunksysteme.
+  \item Kombination mit Gewichtsdaten, Wetterprofilen und Flugaktivit\"at.
+  \item M\"ogliche KI-Erweiterung: selbstoptimierende L\"uftungsmuster.
+\end{itemize}
+
+\section{Nachhaltigkeit und Wirkung}
+\begin{itemize}[topsep=2pt]
+  \item Nutzung nat\"urlicher Konvektionsmechanismen.
+  \item Energieautarke, bienenfreundliche Optimierung.
+  \item Anwendbar auf Segeberger Beuten und andere Systeme.
+\end{itemize}
+
+\section{N\"achste Schritte}
+\begin{enumerate}[topsep=2pt]
+  \item Entwicklung eines modularen Prototyps.
+  \item Pilotierung an realen Bienenv\"olkern.
+  \item Langzeitdatenerfassung und Optimierungsanalyse.
+\end{enumerate}
+
+\section*{Kontakt}
+\textbf{Jens Buttensch\"on} \\
+\small{\url{https://www.xing.com/profile/Jens_Buttenschoen}}
+
+\end{document}
