@@ -1,39 +1,66 @@
-# Venti-Kasten 1.0 – Der virtuelle Naturbaum für die Bienenbeute
+# 🐝 Venti-Kasten – Der virtuelle Naturbaum für die Bienenbeute
 
 **Autor:** Jens Buttenschön  
-**Kooperation:** Marc Juncker, Mittelstand-Digital Zentrum Hannover  
-**Version:** 1.0  
+**Kooperation:** (Optional) Marc Juncker, Mittelstand-Digital Zentrum Hannover  
+**Version:** 1.1  
 **Stand:** April 2025
 
-## 🐝 Projektidee
+---
 
-Der Venti-Kasten 1.0 ist ein intelligentes Lüftungsmodul für moderne Bienenbeuten.  
-Ziel ist es, das Mikroklima in der Beute an die natürliche Baumhöhlenumgebung anzupassen – durch adaptive Konvektionslüftung, Sensorik und minimale Elektronik.
+## 📜 Kurzbeschreibung
 
-Die Bienen sollen beim Fächeln entlastet, Temperaturschwankungen reduziert und die Honigreifung durch gezielte Entfeuchtung verbessert werden.  
-Das Projekt nutzt vorhandene Infrastruktur (PV, Sensorik, Mobilfunkmodul) aus laufenden KI-Imkerei-Projekten.
+Der Venti-Kasten ist ein intelligentes, energieautarkes Lüftungssystem für moderne Bienenbeuten.  
+Es simuliert die natürlichen klimatischen Bedingungen einer Baumhöhle und hilft den Bienen aktiv, Wasser aus eingetragenem Nektar zu entfeuchten und Temperaturschwankungen auszugleichen.
 
-## 🔧 Funktionsprinzip
+Anders als klassische Monitoring-Lösungen (z. B. Stockwaage oder Bienenzähler) greift der Venti-Kasten **aktiv in das Mikroklima ein** und verbessert damit direkt die Lebensqualität der Bienen.
 
-- Umfunktionierter Futterkasten als Lüftungseinheit
-- Temperatur- und Feuchtesensorik
-- Servo-Klappe zur Abluftsteuerung
-- Mikrocontroller (z. B. ESP32) mit adaptiver Logik
-- Versorgung über PV + Akku
-- Datenanbindung an KI-Monitoringsystem (Marc Juncker)
+---
 
-## 📁 Struktur
+## 🚀 Hauptfunktionen
 
-- `tex/` – LaTeX-Quelldatei und PDF-Version 1.0
-- `roadmap/` – geplante Features und Ausbaustufen
-- `README.md` – Projektübersicht (diese Datei)
+- Adaptive Konvektionslüftung auf Basis von Temperatur- und Luftfeuchtesensorik.
+- Dynamische Regelung der Lüftung zur Beschleunigung der Honigreifung.
+- Reduktion des Fächelaufwands der Bienen.
+- Vorbeugung gegen Schwarmneigung durch schnellere Lagerraumbefreiung.
+- Energieautarke Versorgung durch PV-Panel und Akkusysteme.
 
-## 📜 Lizenz
+---
 
-> Dieses Projekt ist derzeit nicht lizenziert für kommerzielle Nutzung.  
-> Es darf für nicht-kommerzielle, private oder forschungsbezogene Zwecke verwendet, zitiert und erweitert werden – unter Angabe des Autors.  
-> Eine kommerzielle Nutzung erfordert Rücksprache mit dem Autor.
+## 🆕 Änderungen in Version 1.1
+
+- Einführung eines Modells zur Luftvolumenberechnung je nach Beutenkonfiguration (Segeberger Beuten, 1–3 Zargen).
+- Erweiterung um ein Wasserdampfaustragsmodell zur genaueren Steuerung der Entfeuchtung.
+- Integration eines Konzepts zur Schwarmprävention durch gezielte Klimasteuerung.
+- Aktualisierte Struktur für Pilotprojekte und Testläufe.
+- Korrektur von Bezeichnungen und Dokumentationsfehlern.
+
+> Details siehe [CHANGELOG.md](./CHANGELOG.md)
+
+---
+
+## 📂 Projektstruktur
+
+- `tex/` – LaTeX-Quelldateien und fertige PDFs
+- `roadmap/` – Langzeitplanung und Featureentwicklung
+- `CHANGELOG.md` – Übersicht über alle Änderungen und Versionen
+- `README.md` – Diese Projektbeschreibung
+
+---
+
+## 🌿 Nachhaltigkeit und Umweltaspekt
+
+- Nutzung natürlicher Konvektionsprinzipien zur Entlastung der Bienen
+- Minimierung des Energieverbrauchs durch intelligente Steuerung
+- Verbesserung der Honigqualität durch optimierte Reifebedingungen
+- Beitrag zu einer nachhaltigeren, bienenfreundlicheren Imkerei
+
+---
 
 ## 📬 Kontakt
 
-[Jens Buttenschön – Xing-Profil](https://www.xing.com/profile/Jens_Buttenschoen)
+**Jens Buttenschön**  
+[Profil auf Xing](https://www.xing.com/profile/Jens_Buttenschoen)
+
+---
+
+*Venti-Kasten: Die Rückkehr des natürlichen Baumklimas – technologisch neu gedacht.*
