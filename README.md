@@ -1,5 +1,5 @@
 # 🐝 Venti-Kasten – Der virtuelle Naturbaum für die Bienenbeute
-
+![Version](https://img.shields.io/badge/Version-1.1-blue)
 **Autor:** Jens Buttenschön  
 **Kooperation:** (Optional) Marc Juncker, Mittelstand-Digital Zentrum Hannover  
 **Version:** 1.1  
