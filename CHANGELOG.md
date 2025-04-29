@@ -9,11 +9,10 @@ Dokumentation der Entwicklungsschritte des Projekts "Venti-Kasten – Der virtue
 
 - Integration eines Luftvolumenmodells für Segeberger Beuten (1–3 Zargen).
 - Einführung einer Wasserdampfaustragsabschätzung auf Basis Innen-/Außenklimadaten.
-- Entwicklung eines Konzeptes zur Schwarmprävention durch Platzoptimierung (schnellere Honigreifung).
-- Erweiterung der adaptiven Steuerlogik: dynamische Anpassung von Lüftungsphasen an Wetterprofile.
-- Korrektur der Bezeichung auf **Segeberger Beute** (statt "Sägeberger").
-- Strukturierung der Roadmap für gezieltes Pilotprojektmanagement.
-- Erster Entwurf für spätere KI-basierte Optimierung der Lüftungsmuster.
+- Entwicklung eines Konzepts zur Schwarmprävention durch schnellere Honigreifung und Platzoptimierung.
+- Diskussion alternativer Lüftungskonzepte: servo-gesteuerte Klappe versus solarbetriebener Mikro-Lüfter.
+- Aktualisierte Strukturierung für ein geplantes Pilotprojekt.
+- Korrektur der Bezeichnung auf **Segeberger Beute** (statt "Sägeberger").
 
 ---
 
