@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\title{\parbox{\linewidth}{\centering\textbf{
+Projektidee: Der virtuelle Naturbaum\\
+Adaptive Konvektionslüftung für Bienenbeuten (Venti-Kasten 1.0)}}}
+
+\author{\parbox{\linewidth}{\centering
+Jens Buttenschön\\
+\small in Kooperation mit Marc Juncker, Mittelstand-Digital Zentrum Hannover\\
+(Bundesministerium für Wirtschaft und Klimaschutz), Standort Garbsen}}
+
+\date{April 2025 – Version 1.0}
+
+\begin{document}
+\maketitle
+
+\section*{Leitgedanke: Der virtuelle Naturbaum}
+In der freien Natur wählen Bienen bevorzugt hohle Bäume als Behausung. Diese bieten ein stabiles, selbstregulierendes Mikroklima: Holz puffert Feuchtigkeit, Konvektion sorgt für sanften Luftaustausch, ohne dass die Bienen aktiv eingreifen müssen. 
+Dieses Prinzip simulieren wir technologisch – und erschaffen einen \textbf{virtuellen Naturbaum} innerhalb der modernen Beute: energieeffizient, ressourcenschonend, und im besten Sinne ökologisch smart.
+
+\section{Zielsetzung}
+Entwicklung eines autarken Lüftungssystems, das auf natürlicher Konvektion basiert und gezielt die Luftfeuchtigkeit und Temperatur im Honigraum reguliert, um:
+\begin{itemize}[topsep=2pt]
+  \item den Fächelaufwand der Bienen zu minimieren,
+  \item die Honigreife zu beschleunigen,
+  \item Temperaturschwankungen im Innenraum auszugleichen,
+  \item ein baumhöhlenähnliches Mikroklima zu schaffen.
+\end{itemize}
+
+\section{Technisches Prinzip: Der umfunktionierte Futterkasten}
+Die klassische Futterzarge wird zur \textbf{Klimasteuerzentrale}:
+\begin{itemize}[topsep=2pt]
+  \item \textbf{Sensorik:} Temperatur- und Luftfeuchtesensor im oberen Beutenbereich.
+  \item \textbf{Aktoreinheit:} Servo- oder Schwenkklappe zur Abluftöffnung im Deckelbereich.
+  \item \textbf{Logik:} Mikrocontroller (z.\,B. ESP32/Arduino) mit adaptiver Regelsoftware.
+  \item \textbf{Energie:} Versorgung über PV und Akkupuffer.
+\end{itemize}
+
+\section{Adaptiver Algorithmus}
+Die Software erfasst zyklisch Innenklimawerte und steuert die Klappenöffnung in Abhängigkeit von:
+\begin{itemize}[topsep=2pt]
+  \item relativer Luftfeuchtigkeit ($\Delta$rF/$\Delta$t),
+  \item Innen- und Außentemperatur,
+  \item Feuchte- und Temperaturprofil der Tageszeiten.
+\end{itemize}
+Durch maschinelles Lernen lassen sich später optimierte Lüftungs- und Temperaturphasen modellieren.
+
+\section{Integration mit KI-Infrastruktur}
+Dank der bestehenden Systeme von \textbf{Marc Juncker (Mittelstand-Digital Zentrum Hannover)} ergeben sich exzellente Synergien:
+\begin{itemize}[topsep=2pt]
+  \item \textbf{Stromversorgung:} Nutzung vorhandener PV-/Akkuinfrastruktur.
+  \item \textbf{Kommunikation:} Datenanbindung via Mobilfunkchip (bestehende Lösung).
+  \item \textbf{Sensorfusion:} Gewicht, Wetter, Aktivität und Klimawerte kombinierbar.
+  \item \textbf{KI-Prognose:} Honigreifemuster, Lüftungsbedarf und Wärmelasten vorhersagbar.
+\end{itemize}
+
+\section{Nachhaltigkeit und Wirkung}
+Der Venti-Kasten 1.0 ist ein Beispiel für smarte Ökotechnologie in der modernen Imkerei:
+\begin{itemize}[topsep=2pt]
+  \item \textbf{ressourcenschonend:} nutzt vorhandene Wärme- und Strömungsprinzipien
+  \item \textbf{energieeffizient:} kein mechanisches Lüftungssystem nötig
+  \item \textbf{bienenfreundlich:} weniger Energieverbrauch für Fächeln und Stabilisierung
+  \item \textbf{ökologisch intelligent:} sowohl für Styropor- als auch Holzbeuten geeignet
+\end{itemize}
+
+\section{Nächste Schritte}
+\begin{enumerate}[topsep=2pt]
+  \item Rücksprache mit Marc zu Hardwareschnittstellen und Energiekapazitäten.
+  \item Entwurf eines modularen Ventikasten-Prototyps.
+  \item Integration der Lüftungs- und Temperaturregelung in bestehende KI-Schnittstellen.
+  \item Pilotversuch an zwei Beuten unter realen Außenbedingungen.
+\end{enumerate}
+
+\section*{Kontakt}
+\textbf{Jens Buttenschön} \\
+\small{\url{https://www.xing.com/profile/Jens_Buttenschoen}}
+
+\end{document}
