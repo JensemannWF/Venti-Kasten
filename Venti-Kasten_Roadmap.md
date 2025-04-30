@@ -9,7 +9,6 @@ Fokus auf Bienengesundheit, Nachhaltigkeit und Ressourcenschonung.
 ## ✅ Aktueller Status
 - Konzept Version 1.0 fertiggestellt (April 2025)
 - Veröffentlichung auf GitHub
-- Erstansprache an Kooperationspartner Marc Juncker erfolgt
 
 ---
 
