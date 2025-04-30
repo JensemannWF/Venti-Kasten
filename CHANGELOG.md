@@ -2,6 +2,17 @@
 
 Dokumentation der Entwicklungsschritte des Projekts "Venti-Kasten – Der virtuelle Naturbaum".
 
+
+## [1.3] – Mai 2025
+
+### Modularisierung durch Einführung von BEE-NET
+
+- Erweiterung des Venti-Kasten-Systems um ein modulares Zwei-Draht-Bussystem (BEE-NET) zur Anbindung externer Komponenten.
+- Definition eines offenen Kommunikations- und Versorgungskonzepts mit einfacher Steckverbindung und automatischer Modulerkennung.
+- Kompatibilitätskonzept für Styroporbeuten durch minimalinvasive Durchführungen und Plug-In-Busverdrahtung über Zargenübergänge.
+- Beispiele für Erweiterungsmodule: Stockwaage, CO₂-Sensor, Außensensorik, Innenkamera.
+- Vergleich zum CAN- oder I²C-Busprinzip zur Verdeutlichung des Systemansatzes.
+- Ziel: skalierbares, herstellerunabhängiges Ökosystem für digitale Imkerei.
 ---
 
 ## [1.1] – April 2025
