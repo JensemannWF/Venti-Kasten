@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\title{\textbf{Venti-Kasten 1.5 – Einschubmodul und modulare Sensorik}}
+\author{Jens Buttenschön}
+\date{30. April 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Überblick}
+
+Version 1.5 erweitert das bisherige Venti-Kasten-Konzept um ein aktives Einschubmodul im Bereich der Windelschiene sowie ein modulares Sensorkonzept. Ziel ist es, vorhandene bauliche Gegebenheiten maximal auszunutzen und die Technik reversibel, nachrüstbar und im Sinne der Bienenumgebung intelligent zu integrieren.
+
+\section*{Mechanisches Einschubmodul}
+
+\begin{itemize}[leftmargin=1.5em]
+  \item Nutzung der Windelschiene (Standard bei Segeberger Beuten) als Träger für das aktive Einschubmodul
+  \item Montage einer Lüftereinheit auf einer Hartfaserplatte oder Trägerplatte mit 12\,mm Stärke
+  \item Einblasung von Luft durch linken Bereich des Gaze-Bodens
+  \item Optional: Querstrom-Lüfter zur Vermeidung von Rücksog (Zirkulationsverhinderung)
+  \item Keine dauerhafte Befestigung erforderlich, einfacher Einschub / Austausch
+\end{itemize}
+
+\section*{Sensorik und Messdaten}
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Temperatur / Luftfeuchtigkeit:} z.\,B. BME280 oder DHT22
+  \item \textbf{CO\textsubscript{2}:} z.\,B. MH-Z19 oder ähnliche, als Frühwarnung für Schwarmstimmung
+  \item \textbf{VOC / Licht / Luftdruck:} optional zur Erkennung externer Einflüsse
+  \item Platzierung im modifizierten Deckel (Gaze geschützt), für optimale Strömungsanströmung
+\end{itemize}
+
+\section*{Datenübertragung}
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Zigbee-Protokoll:} stromsparend, bewährt in Heimautomatisierung
+  \item \textbf{433\,MHz-Funk:} sehr energiesparend, einfache Integration in bestehende Displays (z.\,B. Chibo-Technik)
+  \item \textbf{Alternative:} GSM/GPRS-Modul (z.\,B. SIM800L) für Remote-Anbindung bei entlegenen Ständen
+\end{itemize}
+
+\section*{Stromversorgung}
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Powerbank:} z.\,B. 20\,000\,mAh, wettergeschützt im Deckel oder seitlich
+  \item \textbf{Photovoltaik:} Ergänzung über handelsübliches USB-PV-Modul zur Ladeerhaltung
+  \item \textbf{Hybrid-Konzept:} PV lädt Powerbank, die versorgt den Mikrocontroller
+  \item Modularer Tausch möglich, kein Festanschluss nötig
+\end{itemize}
+
+\section*{Mikrocontroller und Plattformen}
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{ESP32 / ESP8266:} WLAN-fähig, stromsparend, weit verbreitet
+  \item \textbf{Arduino (Nano/Uno):} für einfache Setups
+  \item \textbf{Raspberry Pi Pico / Zero:} mehr Rechenleistung bei höherem Stromverbrauch
+  \item \textbf{Software:} Arduino IDE, MikroPython, Node-RED oder direktes MQTT
+\end{itemize}
+
+\section*{Ausblick}
+
+Mit der 1.5er Version steht eine vollständige technische Infrastruktur bereit, die alle notwendigen Grundfunktionen für eine adaptive, stromsparende und sensorisch gestützte Bienenstock-Lüftung erlaubt. Ziel ist es, offene Standards zu definieren (BEE-NET), um zukünftige Module wie Waagen, Klappen, Kameras oder Ferndiagnostik einfach andocken zu können – ohne weitere Systembrüche.
+
+\end{document}
