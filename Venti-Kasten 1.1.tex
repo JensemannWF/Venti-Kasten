@@ -15,17 +15,13 @@
 Projektidee: Der virtuelle Naturbaum\\
 Adaptive Konvektionsl\"uftung f\"ur Bienenbeuten (Venti-Kasten 1.1)}}}
 
-\author{\parbox{\linewidth}{\centering
-Jens Buttensch\"on\\
-\small basierend auf Konzept 1.0 in Kooperation mit Marc Juncker, Mittelstand-Digital Zentrum Hannover\\
-(Bundesministerium f\"ur Wirtschaft und Klimaschutz), Standort Garbsen}}
-
+\author{Jens Buttensch\"on}
 \date{April 2025 -- Version 1.1}
 
 \begin{document}
 \maketitle
 
-\section*{\normalsize \underline{Was ist neu in Version 1.1?}}
+\section*{Was ist neu in Version 1.1?}
 \begin{itemize}[topsep=2pt]
   \item Erweiterung um Luftvolumenabsch\"atzung f\"ur unterschiedliche Beutenkonfigurationen.
   \item Integration einer Modellrechnung zum Wasserdampfaustrag pro Luftwechsel.
@@ -36,7 +32,9 @@ Jens Buttensch\"on\\
 \end{itemize}
 
 \section*{Leitgedanke: Der virtuelle Naturbaum}
-In der Natur bevorzugen Bienen hohle B\"aume als Behausung, die durch Holzstruktur ein stabiles Mikroklima bieten. Dieses Prinzip \textbf{simulieren wir technologisch}: energieeffizient, ressourcenschonend, bienenfreundlich.
+In der Natur bevorzugen Bienen hohle B\"aume als Behausung, die durch Holzstruktur ein
+stabiles Mikroklima bieten. Dieses Prinzip simulieren wir technologisch:
+energieeffizient, ressourcenschonend, bienenfreundlich.
 
 \section{Zielsetzung}
 Entwicklung eines autarken Systems, das durch intelligente Konvektionsl\"uftung:
@@ -50,30 +48,24 @@ Entwicklung eines autarken Systems, das durch intelligente Konvektionsl\"uftung:
 
 \section{Technisches Prinzip: Der umfunktionierte Futterkasten}
 \begin{itemize}[topsep=2pt]
-  \item \textbf{Sensorik:} Temperatur- und Luftfeuchtesensoren innen und au\u{\ss}en.
+  \item \textbf{Sensorik:} Temperatur- und Luftfeuchtesensoren innen und au\ss{}en.
   \item \textbf{Aktoreinheit:} Servo-Klappe im modifizierten Futterkasten.
   \item \textbf{Logik:} Mikrocontroller (z.B. ESP32) mit adaptiver Regelsoftware.
   \item \textbf{Energie:} Versorgung durch PV-Panel und Akku.
 \end{itemize}
-
-\textbf{L\"uftungskonzept:}
-Aktuell werden verschiedene Varianten des Feuchteabtransports diskutiert.
-Neben einer servo-gesteuerten Abluftklappe steht auch der Einsatz eines solarbetriebenen Mikro-L\"ufters zur Auswahl,
-der tags\"uber automatisch Luftstrom erzeugt und nachts ruht.
-Die finale L\"osung wird basierend auf Energieverbrauch, Zuverl\"assigkeit und thermodynamischer Effizienz im Praxistest bestimmt.
+\textbf{L\"uftungskonzept:} Aktuell werden verschiedene Varianten des Feuchteabtransports diskutiert. Neben einer servo-gesteuerten Abluftklappe steht auch der Einsatz eines solarbetriebenen Mikro-L\"ufters zur Auswahl, der tags\"uber automatisch Luftstrom erzeugt und nachts ruht. Die finale L\"osung wird basierend auf Energieverbrauch, Zuverl\"assigkeit und thermodynamischer Effizienz im Praxistest bestimmt.
 
 \section{Adaptiver Algorithmus}
 \begin{itemize}[topsep=2pt]
-  \item Erfassung von Innen- und Au\u{\ss}enklimadaten.
+  \item Erfassung von Innen- und Au\ss{}enklimadaten.
   \item Bewertung der aktuellen Feuchte- und Temperaturdifferenzen.
   \item Prognose des potenziellen Wasserdampfaustrags.
   \item Entscheidungslogik: gezielte, schonende Luftwechsel.
 \end{itemize}
 
 \section{Erweiterungen in Version 1.1}
-
 \subsection{1. Luftvolumenabsch\"atzung der Beute}
-Basierend auf Segeberger Standardma\u{\ss}en:
+Basierend auf Segeberger Standardma\ss{}en:
 \begin{itemize}[topsep=2pt]
   \item 1 Zarge: ca. 30--35 Liter Innenvolumen.
   \item 2 Zargen: ca. 60--70 Liter.
@@ -83,7 +75,7 @@ Basierend auf Segeberger Standardma\u{\ss}en:
 \subsection{2. Wasserdampfaustragsmodellierung}
 Ermittlung der Feuchteabgabe pro Luftaustausch:
 \begin{itemize}[topsep=2pt]
-  \item Volumen x (Unterschied absolute Feuchte innen/au\u{\ss}en).
+  \item Volumen \( \times \) (Unterschied absolute Feuchte innen/au\ss{}en).
   \item Ziel: schnelle Entlastung der Waben vom eingetragenen Nektarwasser.
 \end{itemize}
 
@@ -94,11 +86,11 @@ Ermittlung der Feuchteabgabe pro Luftaustausch:
   \item Reduzierter Schwarmdruck durch bessere Ressourcensteuerung.
 \end{itemize}
 
-\section{Integration mit KI-Infrastruktur}
+\section{Integration mit Infrastruktur}
 \begin{itemize}[topsep=2pt]
-  \item Anbindung an bestehende PV-/Akku- und Mobilfunksysteme.
-  \item Kombination mit Gewichtsdaten, Wetterprofilen und Flugaktivit\"at.
-  \item M\"ogliche KI-Erweiterung: selbstoptimierende L\"uftungsmuster.
+  \item Anbindung an PV-/Akku- und Mobilfunksysteme denkbar.
+  \item Kombination mit Gewichtsdaten, Wetterprofilen oder Flugaktivit\"at optional m\"oglich.
+  \item Sp\"ater denkbar: selbstoptimierende L\"uftungsmuster auf Basis externer Plattformen.
 \end{itemize}
 
 \section{Nachhaltigkeit und Wirkung}

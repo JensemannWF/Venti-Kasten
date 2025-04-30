@@ -13,77 +13,69 @@
 
 \title{\parbox{\linewidth}{\centering\textbf{
 Projektidee: Der virtuelle Naturbaum\\
-Adaptive Konvektionslüftung für Bienenbeuten (Venti-Kasten 1.0)}}}
+Adaptive Konvektionsl\"uftung f\"ur Bienenbeuten (Venti-Kasten 1.0)}}}
 
 \author{\parbox{\linewidth}{\centering
-Jens Buttenschön\\
-\small in Kooperation mit Marc Juncker, Mittelstand-Digital Zentrum Hannover\\
-(Bundesministerium für Wirtschaft und Klimaschutz), Standort Garbsen}}
+Jens Buttensch\"on}}
 
-\date{April 2025 – Version 1.0}
+\date{April 2025 -- Version 1.0}
 
 \begin{document}
 \maketitle
 
 \section*{Leitgedanke: Der virtuelle Naturbaum}
-In der freien Natur wählen Bienen bevorzugt hohle Bäume als Behausung. Diese bieten ein stabiles, selbstregulierendes Mikroklima: Holz puffert Feuchtigkeit, Konvektion sorgt für sanften Luftaustausch, ohne dass die Bienen aktiv eingreifen müssen. 
-Dieses Prinzip simulieren wir technologisch – und erschaffen einen \textbf{virtuellen Naturbaum} innerhalb der modernen Beute: energieeffizient, ressourcenschonend, und im besten Sinne ökologisch smart.
+In der freien Natur w\"ahlen Bienen bevorzugt hohle B\"aume als Behausung. Diese bieten ein
+stabiles, selbstregulierendes Mikroklima: Holz puffert Feuchtigkeit, Konvektion sorgt f\"ur sanften
+Luftaustausch, ohne dass die Bienen aktiv eingreifen m\"ussen. Dieses Prinzip simulieren wir
+technologisch -- und erschaffen einen virtuellen Naturbaum innerhalb der modernen Beute:
+energieeffizient, ressourcenschonend, und im besten Sinne \"okologisch smart.
 
 \section{Zielsetzung}
-Entwicklung eines autarken Lüftungssystems, das auf natürlicher Konvektion basiert und gezielt die Luftfeuchtigkeit und Temperatur im Honigraum reguliert, um:
-\begin{itemize}[topsep=2pt]
-  \item den Fächelaufwand der Bienen zu minimieren,
+Entwicklung eines autarken L\"uftungssystems, das auf nat\"urlicher Konvektion basiert und gezielt
+die Luftfeuchtigkeit und Temperatur im Honigraum reguliert, um:
+\begin{itemize}
+  \item den F\"achelaufwand der Bienen zu minimieren,
   \item die Honigreife zu beschleunigen,
   \item Temperaturschwankungen im Innenraum auszugleichen,
-  \item ein baumhöhlenähnliches Mikroklima zu schaffen.
+  \item ein baumh\"ohlen\"ahnliches Mikroklima zu schaffen.
 \end{itemize}
 
 \section{Technisches Prinzip: Der umfunktionierte Futterkasten}
-Die klassische Futterzarge wird zur \textbf{Klimasteuerzentrale}:
-\begin{itemize}[topsep=2pt]
+Die klassische Futterzarge wird zur Klimasteuerzentrale:
+\begin{itemize}
   \item \textbf{Sensorik:} Temperatur- und Luftfeuchtesensor im oberen Beutenbereich.
-  \item \textbf{Aktoreinheit:} Servo- oder Schwenkklappe zur Abluftöffnung im Deckelbereich.
+  \item \textbf{Aktoreinheit:} Servo- oder Schwenkklappe zur Abluft\"offnung im Deckelbereich.
   \item \textbf{Logik:} Mikrocontroller (z.\,B. ESP32/Arduino) mit adaptiver Regelsoftware.
-  \item \textbf{Energie:} Versorgung über PV und Akkupuffer.
+  \item \textbf{Energie:} Versorgung \"uber PV und Akkupuffer.
 \end{itemize}
 
 \section{Adaptiver Algorithmus}
-Die Software erfasst zyklisch Innenklimawerte und steuert die Klappenöffnung in Abhängigkeit von:
-\begin{itemize}[topsep=2pt]
+Die Software erfasst zyklisch Innenklimawerte und steuert die Klappen\"offnung in Abh\"angigkeit von:
+\begin{itemize}
   \item relativer Luftfeuchtigkeit ($\Delta$rF/$\Delta$t),
-  \item Innen- und Außentemperatur,
+  \item Innen- und Au\ss{}entemperatur,
   \item Feuchte- und Temperaturprofil der Tageszeiten.
 \end{itemize}
-Durch maschinelles Lernen lassen sich später optimierte Lüftungs- und Temperaturphasen modellieren.
-
-\section{Integration mit KI-Infrastruktur}
-Dank der bestehenden Systeme von \textbf{Marc Juncker (Mittelstand-Digital Zentrum Hannover)} ergeben sich exzellente Synergien:
-\begin{itemize}[topsep=2pt]
-  \item \textbf{Stromversorgung:} Nutzung vorhandener PV-/Akkuinfrastruktur.
-  \item \textbf{Kommunikation:} Datenanbindung via Mobilfunkchip (bestehende Lösung).
-  \item \textbf{Sensorfusion:} Gewicht, Wetter, Aktivität und Klimawerte kombinierbar.
-  \item \textbf{KI-Prognose:} Honigreifemuster, Lüftungsbedarf und Wärmelasten vorhersagbar.
-\end{itemize}
+Durch maschinelles Lernen lassen sich sp\"ater optimierte L\"uftungs- und Temperaturphasen modellieren.
 
 \section{Nachhaltigkeit und Wirkung}
-Der Venti-Kasten 1.0 ist ein Beispiel für smarte Ökotechnologie in der modernen Imkerei:
-\begin{itemize}[topsep=2pt]
-  \item \textbf{ressourcenschonend:} nutzt vorhandene Wärme- und Strömungsprinzipien
-  \item \textbf{energieeffizient:} kein mechanisches Lüftungssystem nötig
-  \item \textbf{bienenfreundlich:} weniger Energieverbrauch für Fächeln und Stabilisierung
-  \item \textbf{ökologisch intelligent:} sowohl für Styropor- als auch Holzbeuten geeignet
+Der Venti-Kasten 1.0 ist ein Beispiel f\"ur smarte \"Okotechnologie in der modernen Imkerei:
+\begin{itemize}
+  \item \textbf{ressourcenschonend:} nutzt vorhandene W\"arme- und Str\"omungsprinzipien,
+  \item \textbf{energieeffizient:} kein mechanisches L\"uftungssystem n\"otig,
+  \item \textbf{bienenfreundlich:} weniger Energieverbrauch f\"ur F\"acheln und Stabilisierung,
+  \item \textbf{\"okologisch intelligent:} sowohl f\"ur Styropor- als auch Holzbeuten geeignet.
 \end{itemize}
 
-\section{Nächste Schritte}
-\begin{enumerate}[topsep=2pt]
-  \item Rücksprache mit Marc zu Hardwareschnittstellen und Energiekapazitäten.
+\section{N\"achste Schritte}
+\begin{enumerate}
   \item Entwurf eines modularen Ventikasten-Prototyps.
-  \item Integration der Lüftungs- und Temperaturregelung in bestehende KI-Schnittstellen.
-  \item Pilotversuch an zwei Beuten unter realen Außenbedingungen.
+  \item Integration der L\"uftungs- und Temperaturregelung in vorhandene Sensoriksysteme.
+  \item Pilotversuch an zwei Beuten unter realen Au\ss{}enbedingungen.
 \end{enumerate}
 
 \section*{Kontakt}
-\textbf{Jens Buttenschön} \\
+\textbf{Jens Buttensch\"on} \\
 \small{\url{https://www.xing.com/profile/Jens_Buttenschoen}}
 
 \end{document}
