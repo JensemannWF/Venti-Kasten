@@ -23,7 +23,6 @@ Dokumentation der Entwicklungsschritte des Projekts "Venti-Kasten – Der virtue
 - Ziel: Verbesserung der Luftfeuchtigkeit und Temperaturstabilität innerhalb der Beute.
 - Umfunktionierung des Futterkastens zur Klimasteuerzentrale.
 - Definition der Systemkomponenten: Sensorik, Aktorik, Mikrocontroller, PV-Versorgung.
-- Anbindungsmöglichkeit an bestehende KI- und Monitoringinfrastruktur (Mittelstand-Digital Zentrum Hannover).
 - Fokus auf Nachhaltigkeit und Verbesserung der Lebensqualität der Bienen.
 
 ---
