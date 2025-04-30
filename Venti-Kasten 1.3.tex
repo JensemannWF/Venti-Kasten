@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\title{\parbox{\linewidth}{\centering\textbf{
+Venti-Kasten 1.3 -- Erweiterung zur modularen Systemarchitektur\\
+(BEE-NET: Ein einfaches Bus-System f\"ur vernetzte Bienenbeuten-Komponenten)}}}
+
+\author{Jens Buttensch\"on}
+\date{Mai 2025 -- Version 1.3}
+
+\begin{document}
+\maketitle
+
+\section*{Zielsetzung}
+Erweiterung des Venti-Kasten-Konzepts um ein standardisiertes Zwei-Draht-Kommunikationssystem mit Spannungsversorgung zur Anbindung externer Module.
+\begin{itemize}
+  \item Erm\"oglichung von modularen Erweiterungen wie z.B. Stockwaagen, CO\textsubscript{2}-Sensoren, Windmessung, Kamera oder Pr\"asenzsensorik.
+  \item Definition einer offenen, dokumentierten Bus-Schnittstelle (Arbeitsname: \textbf{BEE-NET}).
+  \item Schaffung einer physischen, elektrischen und protokolltechnischen Grundlage f\"ur ein unabh\"angiges, skalierbares Beutensystem.
+\end{itemize}
+
+\section{Technische Eckpunkte von BEE-NET (Entwurf)}
+\begin{itemize}
+  \item \textbf{Physikalische Schicht:} Zweidrahtleitung, ca. 12 V DC, Masse und Versorgung kombiniert.
+  \item \textbf{Kommunikation:} serielle \texttt{UART}-\"ahnliche Struktur, ca. 9600 Baud, Halbduplex, Multidrop-Bus.
+  \item \textbf{Topologie:} Stern- oder Baumstruktur mit zentralem Venti-Kasten als Master.
+  \item \textbf{Protokoll:} einfache Adressierung + L\"ange + Daten + CRC-Pr\"ufung.
+  \item \textbf{Versorgung:} typische Modulleistung < 100 mW, Leitungsl\"angen < 5 m pro Abzweig.
+\end{itemize}
+
+\section{Beispielhafte Module}
+\begin{itemize}
+  \item \textbf{Stockwaage:} Gewichtsentwicklung in Echtzeit \textrightarrow{} Prognose Nektar-/Honigfluss.
+  \item \textbf{Au\ss{}ensensorik:} Wetterdaten, Windrichtung, Luftdruck \textrightarrow{} Entscheidungshilfe f\"ur L\"uftungsalgorithmus.
+  \item \textbf{CO\textsubscript{2}-Sensor:} Hinweise auf Volksst\"arke, Atemaktivit\"at \textrightarrow{} Fr\"uhwarnung bei Schwarmdrang.
+  \item \textbf{Innenkamera:} visuelle Beurteilung von Aktivit\"at und Sitzverhalten.
+\end{itemize}
+
+\section{Modularit\"at und Erweiterbarkeit}
+\begin{itemize}
+  \item Offenlegung der elektrischen Spezifikation (Stecksystem, Pinout).
+  \item Standardisiertes Nachrichtenformat (anlehnbar an Modbus/ASCII).
+  \item Adressraum f\"ur bis zu 32 Slaves.
+  \item Busmonitor am Venti-Kasten erlaubt Konfiguration, Logging und Diagnose.
+\end{itemize}
+
+\subsection*{Zargenkompatibilit\"at und Plug-In-Verdrahtung}
+Durch die Verwendung einer d\"unnen Zwei-Draht-Versorgung lassen sich auch Styroporbeuten mit minimalem Aufwand modularisieren. Jede Zarge kann mit zwei seitlichen Anschlussbuchsen versehen werden, durch die der Bus per einfacher Nadel oder Steckertechnik durchgef\"uhrt wird. Eine automatische Modulerkennung (z.B. auf Basis einfacher Adressmeldung) erlaubt Plug-and-Play-\"ahnliche Inbetriebnahme. Dieses Prinzip folgt dem Vorbild moderner CAN- oder I\textsuperscript{2}C-Busstrukturen im Miniaturma\ss stab -- jedoch bewusst vereinfacht und f\"ur Imkertechnik robust umgesetzt.
+
+\section{Vorteile gegen\"uber bisherigen Einzelger\"aten}
+\begin{itemize}
+  \item Reduktion der Hardwarekosten durch zentrale Versorgung und einfache Leitung.
+  \item Geringere St\"oranf\"alligkeit durch klar definierte Topologie.
+  \item Austauschbarkeit und Herstellerunabh\"angigkeit durch offenen Standard.
+  \item Verbesserte Datenlage f\"ur digitale Imkerei.
+\end{itemize}
+
+\section*{N\"achste Schritte}
+\begin{enumerate}[topsep=2pt]
+  \item Definition des Steckersystems (z.B. JST, Molex, WAGO).
+  \item Erster Prototyp einer Mini-Platine f\"ur BEE-NET mit UART-Bridge und Spannungswandler.
+  \item Anpassung der Venti-Kasten-Firmware zur Modulverwaltung (Modulliste, Polling).
+  \item Testlauf mit 2--3 Modulen (Waage, Wetter, Dummy-Slave)
+\end{enumerate}
+
+\section*{Kontakt}
+\textbf{Jens Buttensch\"on}\\
+\small{\url{https://www.xing.com/profile/Jens_Buttenschoen}}
+
+\end{document}
