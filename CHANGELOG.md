@@ -2,6 +2,18 @@
 
 Dokumentation der Entwicklungsschritte des Projekts "Venti-Kasten – Der virtuelle Naturbaum".
 
+[1.5.0] – April 2025
+
+Erweiterungen gegenüber Version 1.4
+
+- Einführung eines aktiven Einschubmoduls (Lüftereinheit) auf Basis der vorhandenen Windelschiene (Varroawindel).
+- Luftführung über Einschub von unten links, Strömung durch Beute, Rückführung über Deckelstruktur.
+- Integration von Sensormodulen im Deckel: Temperatur, Luftfeuchtigkeit, CO₂, optional VOC/Licht.
+- Konzeption eines modularen Sensornetzwerks (z. B. Zigbee, 433 MHz, GSM) mit kurzen Reichweitenanforderungen.
+- Energieversorgung über wettergeschützte Powerbank mit optionaler PV-Nachladung (Hybridkonzept).
+- Auswahl flexibler Mikrocontroller-Plattformen: ESP32, Arduino, Raspberry Pi Pico etc.
+- Fokus auf modulare Erweiterbarkeit und stromsparende Dauerlösungen (Plug-in-Prinzip).
+
 [1.4] – April 2025
 
 Erweiterungen gegenüber Version 1.3
