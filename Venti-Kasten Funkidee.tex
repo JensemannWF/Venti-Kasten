@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\title{Kommunikationsidee Venti-Kasten – Intermodularer Datentransfer per Funk}
+\author{Jens Buttenschön}
+\date{Mai 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Ausgangsidee}
+Die bisherige Planung des Venti-Kastens sieht eine zentrale Steuer- und Sensoreinheit im Deckel der Beute vor. Um jedoch die Verdrahtung zwischen Boden und Deckel zu vermeiden (z.\,B. zur Messung von Luftfeuchtigkeit, Temperatur, CO\textsubscript{2}), wurde die Idee entwickelt, den Deckel als \textbf{eigenständiges Modul mit eigenem ESP32} zu betreiben und die Daten per \textbf{Funk} an den Venti-Kasten im Bodenbereich zu übermitteln.
+
+\section*{Technisches Konzept}
+\begin{itemize}
+  \item \textbf{Deckelmodul (Sender)}: 
+  \begin{itemize}
+    \item ESP32 mit Batteriespeisung (z.\,B. 3x AA, CR2032 oder Mini-Solarzelle)
+    \item Sensorik für Luftfeuchte, Temperatur, ggf. CO\textsubscript{2}
+    \item Übermittlung der Messdaten per \textbf{ESP-NOW} an den Venti-Kasten unten
+  \end{itemize}
+  \item \textbf{Bodenmodul (Empfänger)}:
+  \begin{itemize}
+    \item ESP32 mit Powerbank und ggf. Solar-Ladung
+    \item Zentrale Steuerung der Lüfter und Aktorik
+    \item Empfang der Daten vom Deckelmodul
+    \item Verarbeitung und ggf. Logging oder Anzeige (OLED)
+  \end{itemize}
+\end{itemize}
+
+\section*{Vorteile}
+\begin{itemize}
+  \item Keine empfindlichen Kabelverbindungen zwischen Deckel und Boden
+  \item Keine Stolpergefahr beim Imkern
+  \item Modularität: Komponenten lassen sich einfacher austauschen
+  \item Sehr stromsparend: Nur zyklischer Funkversand der Sensordaten
+\end{itemize}
+
+\section*{Offene Fragen}
+\begin{itemize}
+  \item Welche Stromversorgung ist für das Deckelmodul langfristig am stabilsten?
+  \item Wie oft sollen Datenpakete gesendet werden (Intervall)?
+  \item Ist ggf. eine kleine Zwischenspeicherung der Sensordaten sinnvoll?
+\end{itemize}
+
+\section*{Fazit}
+Die Trennung von Sensorik (oben) und Aktorik (unten) über ein minimalistisches Funkprotokoll wie ESP-NOW erscheint praktikabel und elegant. Der Einsatz eines zweiten ESP32 ist durch die geringen Kosten mehr als vertretbar und ermöglicht eine klare strukturelle Trennung der Aufgaben.
+
+\end{document}
