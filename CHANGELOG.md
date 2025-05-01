@@ -2,6 +2,15 @@
 
 Dokumentation der Entwicklungsschritte des Projekts "Venti-Kasten – Der virtuelle Naturbaum".
 
+[1.6] – Mai 2025
+
+Vertiefung des Regelverhaltens für die adaptive Lüftungssteuerung:
+– Einführung eines Lernalgorithmus zur Optimierung von Lüftungsintervallen auf Basis von Temperatur-/Feuchtigkeitsdifferenzen (innen/außen).
+– Erste Konzeptüberlegungen zur Approximation der optimalen Lüftungsdauer und -häufigkeit durch Messwertanalyse.
+– Nutzung von DeepSleep-Mechanismen zur Energieeinsparung im ESP32-Mikrocontroller.
+– Diskussion möglicher Abschaltstrategien für Sensoren im Ruhezustand zur Stromoptimierung.
+– Klare Abgrenzung von Mess-, Lern- und Betriebsphase mit Fokus auf minimierten Stromverbrauch im Feld.
+
 [1.5.0] – April 2025
 
 Erweiterungen gegenüber Version 1.4
