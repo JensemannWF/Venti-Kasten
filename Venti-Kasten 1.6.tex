@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\geometry{margin=2.5cm}
+
+\title{Venti-Kasten 1.6 -- Lernlogik und DeepSleep}
+\author{Imkerei Honey-Comb / Inhaber Jens Buttensch\"on}
+\date{Mai 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Zielsetzung}
+Diese Version erweitert den Venti-Kasten um erste konzeptionelle Grundlagen für einen lernenden, energieeffizienten Steueralgorithmus. Ziel ist es, die L\"uftung so zu optimieren, dass sie bedarfsgerecht, stromsparend und bietengerecht erfolgt.
+
+\section*{Kernpunkte der Version 1.6}
+
+\begin{enumerate}[label=\arabic*.]
+  \item \textbf{Taktung und DeepSleep-Strategie:} \\Die Steuereinheit soll sich in den DeepSleep-Modus versetzen, wenn keine unmittelbaren Mess- oder Steueraufgaben anstehen. Messintervalle (z.\,B. alle 20 Minuten) werden dynamisch angepasst, um Rechenleistung und Energie zu sparen.
+
+  \item \textbf{Duale Messung:} \\Sensoren erfassen \textbf{Temperatur und Luftfeuchtigkeit} sowohl im Inneren der Beute (z.\,B. im Honigraumdeckel) als auch au\ss en. Diese Werte dienen als Basis zur Berechnung von relativer und absoluter Feuchte sowie Temperaturgradienten.
+
+  \item \textbf{Lernlogik:} \\Durch kontinuierliche Speicherung und Analyse von Messwerten entsteht eine Basis, um aus Erfahrungswerten zu lernen. Beispielsweise:
+  \begin{itemize}
+    \item Wie schnell sinkt die Luftfeuchtigkeit bei bestimmten L\"uftungszeiten?
+    \item Wie stark sinkt dabei die Temperatur im Stock?
+    \item Wie lange dauert es, bis sich das Innenklima wieder auf Bienen-Niveau stabilisiert?
+  \end{itemize}
+
+  \item \textbf{Limitierung durch Schwellwerte:} \\Die Steuerlogik achtet auf Mindest- und Maximalwerte, z.\,B.\ bei der \textit{Stocktemperatur}. Eine Unterschreitung bestimmter Schwellen (z.\,B. 33\,\textdegree C) wird vermieden, selbst wenn die Feuchtigkeit hoch ist.
+
+  \item \textbf{Lernalgorithmus:} \\Ein Regelkreis wertet die Effizienz jeder L\"uftungsphase aus. Wenn z.\,B. 2 Minuten L\"uftung bei bestimmten Au\ss enbedingungen zu starker Abk\"uhlung f\"uhren, wird zuk\"unftig die L\"uftungszeit verk\"urzt.
+
+  \item \textbf{Zukunft: Approximationen und Vorhersagen:} \\Mittelfristig sollen die gelernten Daten genutzt werden, um Vorhersagen \"uber das L\"uftungsverhalten zu treffen. Ziel ist eine adaptive Vorausschau, z.\,B. "`wenn Außentemperatur X und Luftfeuchtigkeit Y, dann l\"uften mit PWM = 30\% f\"ur 2 Minuten".
+
+  \item \textbf{Langzeiterhebung:} \\S\"amtliche Daten werden in einem kommagetrennten Format (CSV) gespeichert und k\"onnen regelm\"a\ss ig per WLAN \textit{abgerufen} werden.
+
+  \item \textbf{Priorisierung:} \\Initial werden m\"oglichst viele Daten gesammelt ("`Sammelmodus"), sp\"ater kann in den "`Effizienzmodus" gewechselt werden.
+
+  \item \textbf{Einbettung der Erkenntnisse:} \\Das Verhalten der Bienen kann so nachvollzogen und optimiert werden -- etwa durch Beobachtung von F\"achelverhalten und Anflugmustern in Relation zur Innenklimatik.
+\end{enumerate}
+
+\section*{Fazit}
+Diese Version stellt die Weichen f\"ur eine intelligente, adaptive L\"uftungssteuerung, die sowohl die Bed\"urfnisse der Bienen respektiert als auch maximale Energieeffizienz anstrebt. Der Venti-Kasten wird damit zur lernenden Einheit.
+
+\end{document}
+
